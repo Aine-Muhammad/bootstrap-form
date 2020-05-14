@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Bootstrap and my created CSS files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="Navbar.css">
+
+    <title>Boootsrap Navbar</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark"> <!-- Making a nav element with bootstrap css navbar classes--> 
+        <a href="#" class="navbar-brand"> <!--Adding an achor to insert an image and info--> 
+            <img src="bkgrnd1.jpg" class="d-inline-block align-left" alt="">
+            Student 
+        </a>
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu"> <!--Button which is going to act as a toggle when the screen gets smaller-->
+            <span class="navbar-toggler-icon"></span> <!--Icon on the button-->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu"> <!--Div for the menu of the navbar which is going to hold all elements-->
+            <ul class="navbar-nav">  <!--Creating an unordered list for holding the elements-->
+                <li class="nav-item ml-xl-4"> <!--The first element-->
+                    <a href="#" class="nav-link ">Name</a> <!--The anchor which is just going to display "NAME", adding a left margin of 3 for large screens-->
+                </li>
+                
+                <li class="nav-item dropdown ml-xl-4"> <!--The second element-->
+                    <a class="nav-link dropdown-toggle" href="#" id="Dropdownmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--The anchor which is going to hold the dropdown toggle, which is initially not collapsed, and basically acts as a menu button-->
+                      Marital Status
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Dropdownmenu"><!--Div for different dropdown options, for #Dropdownmenu -->
+                        <a class="dropdown-item" href="#">Married</a> <!--First dropdown-item-->
+                        <a class="dropdown-item" href="#">Single</a>  <!--Second dropdown-item-->
+                        <a class="dropdown-item" href="#">Lmao</a>    <!--Third dropdown-item-->
+                      </div>
+                </li>
+                <li class="navbar-item ml-xl-4"> <!--The third element-->
+                    <form class="form-inline">  <!--Form, which has the property of holding inline-->
+                        <input class="form-control ml-xl-4" type="search" placeholder="Search" aria-label="Search"> <!--The first input element of type search-->
+                        <button class="btn btn-outline-success my-2 my-sm-0  ml-sm-1" type="submit">Search</button> <!--Button of type submit, which has a y-axis margin of two on medium and upper size screens-->
+                        
+                        <div class="input-group ml-xl-4"> <!--Using a div for adding an addon on the side of an input-->
+                            <div class="input-group-prepend"> <!--this div prepends the input-->
+                              <span class="input-group-text ml-sm-2" id="basic-addon1"> @ </span>
+                            </div>
+                            <input type="text" class="form-control " placeholder="CGPA" aria-label="Username" aria-describedby="basic-addon1"> <!--The input field-->
+                          </div>
+
+                    </form>
+                </li>
+            </ul>
+          
+        </div>
+    </nav>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
